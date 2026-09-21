@@ -20,82 +20,71 @@
 	<div class="practicearea">
 		<div class="practice">
 			<h2>August 26 practice</h2>
+
+			<!-- Required Exercise-->
+			<h3> Inline Elements </h3>
+			<ul>
+				<li> &lt; img &gt;</li>
+				<li> &lt; br &gt; </li>
+				<li> &lt; strong &gt;</li>
+			</ul>
+			<h3> Block Level Elements </h3>
+			<ul>
+				<li> &lt; ol &gt;</li>
+				<li> &lt; li &gt; </li>
+				<li> &lt; p &gt;</li>
+			</ul>
 		</div>
-
-		<!-- Required Exercise-->
-		<div class="practice">
-			<ol>
-				<li> Inline Elements
-					<ul>
-						<li> &lt; img &gt;</li>
-						<li> &lt; br &gt; </li>
-						<li> &lt; strong &gt;</li>
-					</ul>
-				</li>
-				<li> Block Level Element
-					<ul>
-						<li> &lt; img &gt;</li>
-						<li> &lt; br &gt; </li>
-						<li> &lt; strong &gt;</li>
-					</ul>
-
-				</li>
-
-
-			</ol>
-
-		</div>
-
 
 		<div class="practice">
 			<h2> August 31 Practice </h2>
-			<a href="https://www.google.com"> Text Go to Google </a>
-			<a href="doc/imageMap.html"></a> Link to image map </a>
-			<a href="HTMLelements.html"> Broken Link to HTML Elements </a>
+			<h3> BlackBoard Link + ImageMap Link</h3>
+			<p>
 
+				<!-- Required In-Class Exercise -->
 
-			<!-- Required In-Class Exercise -->
+				<!-- Create a link that opens to Blackboard in a new tab -->
+				<a href="https:blackboard.usca.edu" target="_blank"> BlackBoard </a> <br>
 
-			<!-- Link to Blackboard-->
-			<a href="https:blackboard.usca.edu"> </a>
+				<!-- Create a link to imageMap.html -->
+				<a href="doc/imageMap.html" target="_blank"> Image Map </a>
+			</p>
+			<h3> Google Image Link + Copyright </h3>
+			<p>
+				<!-- Google image link  -->
+				<a href="https://www.google.com" target="_blank">
+					<img src="img/google.png" alt="googleimg">
+				</a>
 
-			<!-- Link to imagemap -->
-			<a href="doc/imageMap.html" <p>
-				<p> Img <img src="img/facebook.png" alt="Image for facebook">
-				</p>
+				<!-- Special character for copyright -->
+				<li> &COPY; COPYRIGHT &COPY;</li>
+			</p>
 
-				<p>
-					Link with image
-					<a> href="https://www.google.com"> <img src="img/google.png" alt="google image">
-					</a>
-				</p>
-				<p>
-					Use special character for Copyright Section
-					<li> &COPY; COPYRIGHT &COPY;</li>
-				</p>
-
-				<table>
-					<tr>
-						<td> Column 1 </td>
-						<td> Column 2 </td>
-						<td> Column 3 </td>
-					</tr>
-					<tr>
-						<td> Column 1 </td>
-						<td> Column 2 </td>
-						<td> Column 3 </td>
-					</tr>
-					<tr>
-						<td> Column 1 </td>
-						<td> Column 2 </td>
-						<td> Column 3 </td>
-					</tr>
-				</table>
+			<!-- Table Practice -->
+			<h3> Practice Table </h3>
+			<table border="1">
+				<tr>
+					<td> Column 1 </td>
+					<td> Column 2 </td>
+					<td> Column 3 </td>
+				</tr>
+				<tr>
+					<td> Column 1 </td>
+					<td> Column 2 </td>
+					<td> Column 3 </td>
+				</tr>
+				<tr>
+					<td> Column 1 </td>
+					<td> Column 2 </td>
+					<td> Column 3 </td>
+				</tr>
+			</table>
 
 		</div>
 
 		<div class="practice">
-			<h3> September 2 Class Practice </h3>
+			<h2> September 2 Class Practice </h2>
+			<h3> Temperature Table </h3>
 			<table border="1">
 				<tr>
 					<td colspan="4"> Temperature Distribution in Jan - Apr 2015 (°F) </td>
@@ -129,7 +118,9 @@
 				<td> 47 </td>
 
 			</table>
+
 			<!-- Form Practice -->
+			<h3> Form Practice </h3>
 			<form action="fake.php"> <!-- "action" is form processing -->
 				<p> Username:
 					<input type="text" name="username" maxlength="10">
@@ -155,21 +146,26 @@
 					<input type="reset" value="Clear">
 				</p>
 			</form>
-
 		</div>
+
 		<div class="practice">
 			<h2> September 9 Practice </h2>
-			<p> Please select your favorite genre:
+			<h3> Radio Buttons </h3>
+			<p>
+				<label for="genre">Please select your favorite genre: </label> <br>
 				<input type="radio" name="genre" value="rock"> Rock
 				<input type="radio" name="genre" value="pop"> Pop
 				<input type="radio" name="genre" value="jazz"> Jazz
 			</p>
+
+			<h3> Text Area </h3>
 			<form action="rrr.php">
 				Enter your comment
-				<textarea name="comment" id="" cols="15" rows="15">
-					Enter your comment here --- better to use placeholder
+				<textarea name="comment" id="comment" cols="10" rows="15">
+					Enter your comment here...
 				</textarea>
 
+				<h3> Select </h3>
 				<p>
 					Select your favorite color
 					<select name="favcolor">
@@ -180,15 +176,28 @@
 					</select>
 				</p>
 				<p>
+					Select your preferred music outlet
+					<select name="music">
+						<option value="ipod"> iPod </option>
+						<option value="radio"> Radio </option>
+						<option value="computer"> Computer </option>
+					</select>
+				</p>
+
+				<h3> Image Practice </h3>
+				<p>
 					<button>
 						<img src="img/puppy.jpg" alt="puppy"> Puppy
 					</button>
 				</p>
 
-				<input type="text" id="fn" name="fn" value="name">
-				<label for="fd"> Enter your name: </label>
+				<h3> Required Form Practice </h3>
 				<p>
-					<input type="color" name="selcolor">
+					<label for="fd"> Enter your name: </label>
+					<input type="text" id="fn" name="fn" value="name"><br>
+					<label for="color"> Select a color </label>
+					<input type="color" name="selcolor"><br>
+					<label for="birthday"> When is your birthday? </label>
 					<input type="date" name="checkin">
 				</p>
 				<p> *Email (required)
@@ -196,60 +205,66 @@
 				</p>
 				<p> *Phone Number
 					<input type="tel" name="phone" placeholder="xxx-xxx-xxxx" pattern="\d{3}-\d{3}-\d{4}" required>
-
 				</p>
-
 				<input type="submit" value="submit">
 			</form>
 
-		</div class="practice">
-		<h2> September 14 Practice </h2>
+		</div>
+		<div class="practice ">
+			<h2> September 14 Practice </h2>
 
-		<form>
-			Enter the rating
-			<input type="number" min="0" max="5" name="Rating">
+			<form>
+				<p>
+					Enter a rating (0-5)
+					<input type="range" id="range" min="0" max="5" name="rating">
+				</p>
+				<p>
+					Pick a number (0-5)
+					<input type="number" min="0" max="5">
+			</form>
+
+			<form action="fake.php">
+				<h2> Create a New Account </h2>
+				<p> Email (required):
+					<input type="email" name="email" maxlength="10" placeholder="xxxx@usca.edu" required>
+				</p>
+				<p> Password:
+					<input type="password" name="pwd" maxlength="15">
+				</p>
+				<p> *Phone Number
+					<input type="tel" name="phone" placeholder="xxx-xxx-xxxx" pattern="\d{3}-\d{3}-\d{4}" required>
+
+				</p>
+
+			</form>
 
 			<p>
-				Pick your number
-				0<input type="number" min="0" max="5">
-		</form>
-
-		<form action="fake.php">
-			<h2> Create a New Account </h2>
-			<p> Email (required):
-				<input type="email" name="email" maxlength="10" placeholder="xxxx@usca.edu" required>
-			</p>
-			<p> Password:
-				<input type="password" name="pwd" maxlength="15">
-			</p>
-			<p> *Phone Number
-				<input type="tel" name="phone" placeholder="xxx-xxx-xxxx" pattern="\d{3}-\d{3}-\d{4}" required>
-
+			<details>
+				<summary> Assignment List </summary>
+				<ul>
+					<li> Assignment 1 </li>
+					<li> Assignment 2 </li>
+					<li> Assignment 3 </li>
+					<li> Assignment 4 </li>
+				</ul>
+			</details>
 			</p>
 
-		</form>
+			<p>
+				<button popovertarget="menu"> Click to pop up </button>
+			<div id="menu" popover=""> Popover </div>
+			</p>
 
-		<p>
-		<details>
-			<summary> Assignment List </summary>
-			<ul>
-				<li> Assignment 1 </li>
-				<li> Assignment 2 </li>
-				<li> Assignment 3 </li>
-				<li> Assignment 4 </li>
-			</ul>
-		</details>
-		</p>
+			<iframe src="" frameborder="0"></iframe>
+			<iframe src="HTMLelements.html" frameborder="10"></iframe>
+		</div>
 
-		<p>
-			<button popovertarget="menu"> Click to pop up </button>
-		<div id="menu" popover=""> Popover </div>
-		</p>
+		<div class="practice">
+			<h2> September 16 Practice </h2>
+			<h3> Google Map of USC Columbia </h3>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.9084895529168!2d-81.028503!3d33.99488420000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8bb282cb2a61b%3A0x78bd73542178f54e!2sUniversity%20of%20South%20Carolina!5e0!3m2!1sen!2sus!4v1790031076404!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
-		<iframe src="" frameborder="0"></iframe>
-		<iframe src="HTMLelements.html" frameborder="10"></iframe>
-
-
+		</div>
 
 	</div>
 
